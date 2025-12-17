@@ -79,7 +79,7 @@ function App() {
                   </button>
                 </div>
                 <object
-                  className="w-full h-[90vh]"
+                  className="w-full h-[80vh]"
                   data={fileData}
                   type="application/pdf"
                 >
@@ -114,12 +114,17 @@ function App() {
           <p>
             <b>how to use?</b>
           </p>
-          <ul className="list-disc [&>li]:ml-4">
+          <ul className="list-disc [&>li]:ml-4 py-2">
             <li>this layout matches the actual sheet</li>
             <li>select the nametags you want to print</li>
             <li>enter your name, pronouns, etc.</li>
             <li>click "print" to make a PDF, and print it!</li>
           </ul>
+          <p>
+            <b>hint:</b> if you only want the logo (e.g., if you want to
+            hand-write your name) you can just check "print" and not enter any
+            text.
+          </p>
         </div>
       </div>
       <div className="grid grid-cols-2 gap-4 border p-4 bg-neutral-200 shadow-lg">
